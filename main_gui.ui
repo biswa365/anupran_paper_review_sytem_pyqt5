@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1387</width>
+    <height>882</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>University Research Paper Review Management System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_11">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="16,1">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,5,6">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>Expert Load Details:</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QTableWidget" name="tableLoadTable">
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <column>
+                <property name="text">
+                 <string>E_Id</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Load</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expert</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Max Load</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise1</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise2</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise3</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise4</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise5</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="title">
+             <string>Free Expert List:</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QTableWidget" name="tableFreeExpert">
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <column>
+                <property name="text">
+                 <string>E_Id</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp1</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp2</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp3</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp4</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp5</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expert Name</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="title">
+             <string>Free Paper List:</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QTableWidget" name="tableFreePaper">
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <column>
+                <property name="text">
+                 <string>P_Id</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp1</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp2</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp3</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp4</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>exp5</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Paper Description</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="8,8">
+          <item>
+           <widget class="QGroupBox" name="gbxMatchTable">
+            <property name="title">
+             <string>Match Output:</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QTableWidget" name="tableMatchOutput">
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <column>
+                <property name="text">
+                 <string>E_Id</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>#</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>P_Id</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Score</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Thread Name</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Relationship</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>All Papers:</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QTableWidget" name="tablePapers">
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <column>
+                <property name="text">
+                 <string>P_Id</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expert Assigned</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Status</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Pages</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Papers Description</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise1</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise2</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise3</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise4</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Expertise5</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="pixmap">
+           <pixmap>logo.png</pixmap>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>Greedy:</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Batch Size</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBatcSize">
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="value">
+                <number>10</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnGreedySelect">
+             <property name="text">
+              <string>Greedy &amp;Select</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>Non Greedy:</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Expertise Rank</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Expert</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinExpertDepth">
+               <property name="maximum">
+                <number>5</number>
+               </property>
+               <property name="value">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Paper</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinPaperDepth">
+               <property name="maximum">
+                <number>5</number>
+               </property>
+               <property name="value">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnNonGreedySelect">
+             <property name="text">
+              <string>&amp;Non Greedy Select</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>Stable Match</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QCheckBox" name="cbMultithread">
+             <property name="text">
+              <string>Dual Thread</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnStableMatch">
+             <property name="text">
+              <string>Stable &amp;Match</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lblTotalScore">
+             <property name="text">
+              <string>Total Score:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnSave">
+             <property name="text">
+              <string>&amp;Save</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnReviewed">
+          <property name="text">
+           <string>&amp;Reviewed</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnNotReviewed">
+          <property name="text">
+           <string>&amp;Not Reviewed</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnReset">
+          <property name="text">
+           <string>Reset &amp;All</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QProgressBar" name="pbProgress">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1387</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
