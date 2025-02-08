@@ -21,8 +21,8 @@ pip install PyQt5 numpy sqlite3
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/biswa365/anupran_paper_review_sytem_pyqt5.git
+   cd anupran_paper_review_sytem_pyqt5
    ```
 
 2. Install dependencies:
